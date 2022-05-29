@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <title>Centro Automotivo</title>
+</head>
+<body>
+   
+    <!-- Navbar -->
+
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top p-3">
+        <a class="navbar-brand" href="#"><img src="assets/img/logo_reduzida.png" alt=""></a>
+
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <h4><a class="nav-link" href="#inicio">Somos</a></h4>
+            </li>
+            <li class="nav-item active">
+                <h4><a class="nav-link" href="#servicos">Serviços</a></h4>
+              </li>
+              <li class="nav-item active">
+                <h4><a class="nav-link" href="#contatos">Contato</a></h4>
+              </li>
+              <li class="nav-item active">
+                <h4><a class="nav-link" href="#">Galeria</a></h4>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+    <!-- Inicio -->
+<section class="container-fluid inicio text-center" id="inicio">
+        <div class="row pt-5 pb-5">
+        <div class="col-sm-6 col-12 text-center">    
+        <h3 class="text-center">Um pouco sobre nós...</h3>
+        <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis   
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente distinctio iusto nobis, officiis minima modi reprehenderit repellendus architecto quis rem autem ex.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente distinctio iusto nobis, officiis minima modi reprehenderit repellendus architecto quis rem autem ex.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente distinctio iusto nobis, officiis minima modi reprehenderit repellendus architecto quis rem autem ex.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente distinctio iusto nobis, officiis minima modi reprehenderit repellendus architecto quis rem autem ex.
+        </p>   
+    </div>
+    <div class="col-sm-6 col-12 text-center">
+        <img src="assets/img/oficina_reduzida.jpg" class="img-fluid">
+    </div>
+            
+</section>
+
+    <!-- Serviços -->
+<section class="container-fluid servicos" id="servicos">
+    <h2 class="text-center mt-2 mb-5 " id="titulo">Serviços</h2>
+    <div class="row">
+       <div class="col-sm-6 text-center p-5">
+           <img src="assets/img/carro_manutencao.png" alt="manutenção de automóvel">
+           <h3>Serviços de Mecânica</h3>
+           <p class="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, tempora ad libero voluptatem, ex officiis architecto quo reprehenderit unde fugit corrupti dolore distinctio sequi temporibus minima. Odio laboriosam repellendus ab?Lorem ipsum dolor.</p>
+       </div>
+       <div class="col-sm-6 text-center p-5">
+        <img src="assets/img/carro_eletrica.png" alt="manutenção de automóvel">
+        <h3>Serviços de Eletrica</h3>
+        <p class="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, tempora ad libero voluptatem, ex officiis architecto quo reprehenderit unde fugit corrupti dolore distinctio sequi temporibus minima. Odio laboriosam repellendus ab?Lorem ipsum dolor.</p>
+    </div>
+    <div class="col-sm-6 text-center p-5">
+        <img src="assets/img/carro_lavegem.png" alt="manutenção de automóvel">
+        <h3>Serviços de Limpeza</h3>
+        <p class="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, tempora ad libero voluptatem, ex officiis architecto quo reprehenderit unde fugit corrupti dolore distinctio sequi temporibus minima. Odio laboriosam repellendus ab?Lorem ipsum dolor. </p>
+    </div>
+    <div class="col-sm-6 text-center p-5">
+        <img src="assets/img/carro_pneu.png" alt="manutenção de automóvel">
+        <h3>Serviços de Alinhamento</h3>
+        <p class="text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, tempora ad libero voluptatem, ex officiis architecto quo reprehenderit unde fugit corrupti dolore distinctio sequi temporibus minima. Odio laboriosam repellendus ab?Lorem ipsum dolor.</p>
+    </div> 
+    </div>
+      
+</section>
+
+    <!-- Contatos -->
+
+    <section  class="container-fluid p-5" id="contatos">
+        <h2 class="text-center">Contatos</h2>
+            <div class="text-center mt-3">
+                <img src="assets/img/telefone.png">
+                <h3 class="mt-3">71 9 8344-3744</h3>
+                <div>
+                    <h4>
+                        <a href="mailto:arosartedigital@gmail.com">Envie um email</a>
+                    </h4>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="conteiner-fluid text-white">
+        <div class="row">
+            <div class="col p-5 text-center">
+                <a href="#">REDCAR</a> &copy; <span id="ano"></span>
+            </div>
+        </div>
+        
+    </footer>
+
+
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        var data = new Date();
+        var ano = data.getFullYear();
+        document.getElementById('ano').innerText=ano;
+    </script>
+    
+</body>
+</html>
